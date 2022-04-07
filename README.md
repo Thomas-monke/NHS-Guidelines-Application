@@ -13,7 +13,8 @@ This unofficial application is designed for NHS Doctors and Clinicians to view g
 | ![Home page user settings on a mobile device](Images/MobileHomepage2.png "Home page user settings on a mobile device") | Figure 2:  User settings on the guidelines homepage. The user can either logout and return to the login page or they can access the settings page of the app where they can change the appearance of the app to improve accessibility. |
 | ![Home page hamburger menu on a mobile device](Images/MobileHomepage3.png "Home page hamburger menu on a mobile device") | Figure 3: The guidelines homepage with an extended hamburger menu. The menu shows the different categories of guidelines that the user can visit while providing options to logout of the app, view the settings and search for specific guidelines. |
 
-(Images/Wireframe.PNG "General wireframes") | Figure 4: Three guidelines - one for the home menu, another for the sidebar menu and the last for the dropdown of a specific guideline.
+![General wireframes] (Images/Wireframe.PNG "General wireframes")
+Figure 4: Three wireframes - one for the home menu, another for the sidebar menu and the last for the dropdown of a specific guideline.
 
 ---
 ## Checklist of implemented features:
@@ -27,7 +28,10 @@ This unofficial application is designed for NHS Doctors and Clinicians to view g
 
 ---
 ## Download
-**Type in terminal**
+**Type in terminal:**
+
 `git clone https://github.com/Thomas-monke/NHS-Guidelines-Application/`
+
 Then in android studio, go to File, then Open... and navigate to the directory that the git clone command was run and open it.
+
 To download android studio: https://developer.android.com/studio
