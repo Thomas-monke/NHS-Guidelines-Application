@@ -92,11 +92,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
-//        if (savedInstanceState == null) {
-//            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-//                    new MessageFragment()).commit();
-//            navigationView.setCheckedItem(R.id.nav_message);
-//        }
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction();
+            navigationView.setCheckedItem(R.id.nav_guidelines);
+        }
     }
 
     @Override
@@ -110,20 +109,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//        switch (item.getItemId()) {
-//            case R.id.nav_message:
-//                break;
-//            case R.id.nav_chat:
-//                break;
-//            case R.id.nav_profile:
-//                break;
-//            case R.id.nav_share:
-//                Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
-//                break;
-//            case R.id.nav_send:
-//                Toast.makeText(this, "Send", Toast.LENGTH_SHORT).show();
-//                break;
-        //}
+        switch (item.getItemId()) {
+            case R.id.nav_home:
+                break;
+            case R.id.nav_guidelines:
+                break;
+            case R.id.nav_help:
+                break;
+            case R.id.nav_settings:
+                Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.nav_logout:
+                Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show();
+                break;
+        }
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
