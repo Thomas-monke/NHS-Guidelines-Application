@@ -17,16 +17,6 @@ This unofficial application is designed for NHS Doctors and Clinicians to view g
 Figure 4: Three wireframes - one for the home menu, another for the sidebar menu and the last for the dropdown of a specific guideline.
 
 ---
-## Checklist of implemented features:
-
-- [] Create navigateable GUI
-- [] Create database
-- [] Implement a login system
-- [] Create guidelines editor
-- [] Populate database 
-- [] Use populated database to test application
-
----
 ## Download
 **Type in terminal:**
 
@@ -35,3 +25,8 @@ Figure 4: Three wireframes - one for the home menu, another for the sidebar menu
 Then in android studio, go to File, then Open... and navigate to the directory that the git clone command was run and open it.
 
 To download android studio: https://developer.android.com/studio
+---
+#Implemented UI features
+Added toolbar - access it from the home page of the application
+Added sidebar - access it using the toolbar icon on the left, or by dragging from the left hand side of the screen to the right. This will display a side menu where different activities can be accessed. The five activities are: Home, Guidelines, Help, Settings and Logout.
+Added Carousel in the guidelines activity. Different categories of conditions can be swiped through. For now, simple UI images are being used to represent conditions but this is not intended to be final. When the user swipes to a new category, the TextView updates accordingly. A future implementation will have a ListView which will store all conditions and their associated guidelines. These can be searched through using the SearchView component, which currently has no functionality. 
